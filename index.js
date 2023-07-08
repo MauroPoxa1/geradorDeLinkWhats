@@ -15,8 +15,8 @@ var btnClick = document.getElementById("botaoGerador");
 btnClick.addEventListener('click',  function()  {
     var mensagem = document.getElementById("sms").value;
     var numero = document.getElementById("numero").value;
+    var el = document.getElementById("inf-erro");
     if (numero.length<9){
-        var el = document.getElementById("inf-erro");
         el.innerHTML="Número acima está faltando "+ (9 - numero.length)+" digitos";
         el.classList.add('inf-erro-ativo');
         el.focus;
