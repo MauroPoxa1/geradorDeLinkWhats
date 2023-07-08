@@ -1,0 +1,304 @@
+
+body  {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('https://geradordelinkwhatsapp.app.br/wp-content/uploads/2022/09/Link-Whatsapp.webp');
+}
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, h4, h5,h6{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header {
+    display:flex;
+    align-items: center;
+    gap:15px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.tituloDoSite{
+    font-size: 1rem;
+}
+.logotipoHeader{
+    width: 50px;
+    height: 50px;
+}
+.botaoNav {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.botaoNav:hover{
+    border-bottom: 2px solid  rgb(2, 156, 10);
+}
+.nav__lista{
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    font-size: 0.8rem;
+    background-color: rgb(255, 255, 255);
+}
+.ativo {
+    display: grid;
+    visibility: visible;
+    gap:22px;
+    border-bottom: 2px solid  rgb(124, 4, 4);
+}
+
+.btnNav {
+    font-size: 1.2rem;
+    color: #000;
+    border-bottom: 2px solid #0000002f;
+}
+
+/*
+/////////////////////////////////////*/
+
+.titulo{
+    font-size: 1.6rem;
+    margin: 35px 0;
+    font-weight: 500;
+    padding: 0 20px;
+    color: #fff;
+} 
+.imagem__box1{
+    height: 100px;
+}
+.box2{
+    display: flex;
+    gap:10px;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center; 
+}
+.titulo__conteudo {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.texto__conteudo {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.container-box-1 {
+    padding: 10px 20px;
+    background: #09035fb7;
+    border: 2px solid #2DE314;
+    color: #fff;
+}
+
+
+/*/////////////////////////*/
+
+.card{
+    margin: 25px 0;
+}
+
+.inf-erro{
+    display: none;
+    color: red;
+    font-weight: 300;
+    font-size: 15px;
+}
+.inf-erro-ativo{
+    display: block;
+}
+.inputGerador {
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 95%;
+}
+ input:focus-within {
+    border: none;
+    box-shadow: 0px 0px 3px 2px #22ff05;
+    outline: none;
+}
+
+input:focus{
+    margin-right: 50px
+}
+
+label{
+    font-size: .9rem;
+    margin: 100px 0;
+}
+.acora_garar_link {
+    display: block;
+    text-decoration: none;
+    color: #22ff05;
+    font-size: 0.6rem;
+    text-align: right;
+    margin-top: -12px;
+}
+
+
+.botaoGerador{
+    padding: 15px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 700;
+    background: #117704;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*//////////////// info ////////////*/
+
+
+.conteudo_info {
+    display: grid;
+    gap:10px;
+    background: #B6CBC5;
+    padding: 20px;
+}
+
+.titulo__info {
+    font-size: 1.2rem;
+}
+
+.lista__numero {
+    list-style-type: decimal;
+    padding: 5px 20px;
+}
+
+.lista__numero__texto {
+    font-size: 0.9rem;
+}
+
+.texto__info{
+    font-size: 0.9rem;
+}
+
+/*          modal                   */
+
+.modal {
+    display: none;
+    position: fixed;
+    background-color: #f3f3f3;
+    width: 80%;
+    left: 10%;
+    right: 25%;
+    box-sizing: border-box;
+    top: 25%;
+    border-radius: 16px;
+    padding: 20px;
+}
+.fechar{
+    font-size: 1.5rem;
+    text-align: end;
+    cursor: pointer;
+}
+.modal h2 {
+    font-size: 1.75rem;
+    margin-bottom: 5px;
+}
+.madal-input {
+    display: grid;
+    column-gap:5px;
+    row-gap:10px;
+}
+.madal-input h3{
+    grid-column: 1/3;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.madal-input textarea,.madal-input button{
+    grid-column: 1/3;
+
+}
+@media (min-width:720px){
+    .madal-input {
+        row-gap: 0;
+    }
+    .madal-input textarea{
+        grid-column: 1/2;
+    }
+    .madal-input button{
+        grid-column: 2/3;
+    }
+}
+.madal-input button {
+    text-align: center;
+    color: #fff;
+    border: none;
+    background-color: #2ca81b;
+    border-radius: 6px;
+    cursor: pointer;
+    min-height: 40px;
+}
+.madal-input button:hover {
+    background-color: #1f7a13;
+}
+.madal-input textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-top: 18px;
+    padding-left: 10px;
+    border: none;
+    background-color: #ebe8e8;
+}
+.madal-input textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 3px 2px #22ff055e;
+}
+.inf-modal {
+    color: rgb(0, 89, 255);
+    font-size: 1rem;
+    display: none;
+}
+.inf-modal-copy{
+    display: block;
+}
+.modal-ativo{
+    display: block;
+}
+
+@media (min-width:720px){
+    .header {
+        justify-content: space-evenly;
+    }
+    .modal {
+        width: 80%;
+        left: 10%;
+        right: 25%;       
+    }
+}
+@media (min-width:1200px){
+        .header {
+            padding: 1rem 5rem;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+        }
+        .conteudo{
+            width: 880px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .conteudo_info2{
+            grid-column: 1/3;
+        }
+        .titulo{
+            text-align: center;
+            font-weight: bold;
+        }
+        .modal {
+            width: 45%;
+            left: 30%;
+        }
+}
