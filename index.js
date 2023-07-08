@@ -20,6 +20,10 @@ btnClick.addEventListener('click',  function()  {
         el.innerHTML="Número acima está faltando "+ (9 - numero.length)+" digitos";
         el.classList.add('inf-erro-ativo');
         el.focus;
+    }else  if (numero.length>11){
+        el.innerHTML="Número acima está errado tem "+ ( numero.length - 11)+" digitos a mais";
+        el.classList.add('inf-erro-ativo');
+        el.focus;
     }else{
     linkGarar(numero,mensagem);
     }
